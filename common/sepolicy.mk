@@ -3,5 +3,5 @@
 # inherit from Conquer
 #
 
-BOARD_SEPOLICY_DIRS += \
-    device/conquer/sepolicy/common
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    device/conquer/sepolicy/common/private
