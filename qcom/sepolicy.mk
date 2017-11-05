@@ -4,4 +4,4 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    device/conquer/sepolicy/qcom
+    device/conquer/sepolicy/qcom/common
