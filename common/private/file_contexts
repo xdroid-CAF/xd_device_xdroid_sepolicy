@@ -1,3 +1,6 @@
+# I/O Scheduler
+/sys/devices/.*/block/(dm-|mmcblk|sd)[a-z0-9]+/queue(/.*)? u:object_r:sysfs_io_sched_tuneable:s0
+
 # Postinstall
 /system/bin/backuptool_ab\.functions              u:object_r:otapreopt_chroot_exec:s0
 /system/bin/backuptool_ab\.sh                     u:object_r:otapreopt_chroot_exec:s0
