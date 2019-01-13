@@ -1,0 +1,2 @@
+# Sideload backuptool
+allow recovery self:process setexec;
