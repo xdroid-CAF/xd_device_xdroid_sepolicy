@@ -9,6 +9,9 @@ TARGET_USES_PREBUILT_VENDOR_SEPOLICY ?= true
 endif
 endif
 
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
+    device/conquer/sepolicy/common/public
+
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/conquer/sepolicy/common/private
 
