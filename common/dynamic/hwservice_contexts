@@ -1,1 +1,2 @@
+motorola.hardware.health::IMotHealth                                    u:object_r:hal_health_hwservice:s0
 vendor.lineage.biometrics.fingerprint.inscreen::IFingerprintInscreen    u:object_r:hal_lineage_fod_hwservice:s0
