@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all qcom products
-# that inherit from conquer
+# that inherit from xdroid
 #
 
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
@@ -11,20 +11,20 @@ endif
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/conquer/sepolicy/qcom/dynamic \
-    device/conquer/sepolicy/qcom/system
+    device/xdroid/sepolicy/qcom/dynamic \
+    device/xdroid/sepolicy/qcom/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/conquer/sepolicy/qcom/dynamic \
-    device/conquer/sepolicy/qcom/vendor
+    device/xdroid/sepolicy/qcom/dynamic \
+    device/xdroid/sepolicy/qcom/vendor
 endif
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/conquer/sepolicy/qcom/private
+    device/xdroid/sepolicy/qcom/private
 
 ifneq ($(filter msm8960 msm8226 msm8610 msm8974 apq8084 msm8909 msm8916 msm8952 msm8992 msm8994,$(TARGET_BOARD_PLATFORM)),)
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/conquer/sepolicy/qcom/legacy-vendor
+    device/xdroid/sepolicy/qcom/legacy-vendor
 endif
 
 ifeq (,$(filter msm8960 msm8226 msm8610 msm8974 apq8084 msm8909 msm8916 msm8952 msm8992 msm8994 msm8937 msm8953 msm8996 msm8998 sdm660 sdm710 sdm845, $(TARGET_BOARD_PLATFORM)))
